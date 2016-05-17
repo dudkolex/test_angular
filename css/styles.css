@@ -1,0 +1,12 @@
+body{
+    background:#eee;
+}
+.main-content{
+    padding: 30px;
+}
+.title{
+    margin-top:0;
+}
+.article{
+    border-bottom: 1px solid #9d9d9d;
+}

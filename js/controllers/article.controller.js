@@ -1,4 +1,3 @@
-angular.module('test').controller('articleCtrl', [function () {
-
-    console.log('articleCtrl added');
+angular.module('test').controller('articleCtrl', ['$stateParams', 'articlesFact', function ($stateParams, articlesFact) {
+    this.article = $stateParams;
 }]);

@@ -8,11 +8,5 @@ angular.module('test').controller('articlesCtrl', ['articlesFact', function (art
         }.bind(this));
     };
 
-    this.getCategoryById = function(_id){
-        angular.forEach(this.categories, function (value) {
-            
-        });
-    };
-
     this.getData();
 }]);

@@ -8,10 +8,10 @@ angular.module('test', ['ui.router'])
         controllerAs : 'asC'
     });
 
-    $stateProvider.state('article',{
-        url : '/article',
+    $stateProvider.state('article/:id',{
+        url : '/article/:id?title&body&image&datePublished&categoryId$categories',
         templateUrl : 'templates/article.html',
-        controller : 'articlesCtrl',
+        controller : 'articleCtrl',
         controllerAs : 'aC'
     });
 

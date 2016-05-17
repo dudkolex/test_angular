@@ -1,5 +1,8 @@
 <div class="col-sm-9 main-content">
-    <div class="row article" ng-repeat="article in asC.articles">
+    <select class="selectpicker" ng-model="asC.selectedCat" ng-options="item.name for item in asC.categories"></select>
+    <br>
+    <br>
+    <div class="row article" ng-repeat="article in asC.articles | filter:asC.selectedCat.id">
         <div class="col-sm-6">
             <a href="#" class="">
                 <img ng-src="img/{{article.image}}" class="img-responsive">

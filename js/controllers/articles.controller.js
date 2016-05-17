@@ -8,5 +8,11 @@ angular.module('test').controller('articlesCtrl', ['articlesFact', function (art
         }.bind(this));
     };
 
+    this.selectCategory = function(_id){
+        this.selectedCat = {
+            id :_id
+        };  
+    };
+
     this.getData();
 }]);

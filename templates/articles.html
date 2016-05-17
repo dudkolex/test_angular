@@ -22,6 +22,6 @@
 </div>
 <div class="col-sm-3 sidebar">
     <div class="list-group">
-        <a href="" ng-repeat="category in asC.categories" class="list-group-item">{{category.name}}</a>
+        <a href="" ng-click="asC.selectCategory(category.id)" ng-repeat="category in asC.categories" class="list-group-item">{{category.name}}</a>
     </div>
 </div>
